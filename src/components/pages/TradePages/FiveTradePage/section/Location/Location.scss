@@ -1,0 +1,76 @@
+.location {
+  border-bottom: 1px solid #cbcbcb;
+  height: 40px;
+  background: #fff;
+
+  .inner {
+    position: relative;
+    width: 1280px;
+    height: 40px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .home {
+      float: left;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #cbcbcb;
+      border-width: 0 1px;
+      position: relative;
+    }
+
+    .home:before {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 15px;
+      background: url(../../../../../../img/loc_homeicon.png) no-repeat 0 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    .locallist {
+      float: left;
+      overflow: hidden;
+
+      > li {
+        float: left;
+
+        > a {
+          display: block;
+          height: 40px;
+          line-height: 40px;
+          padding: 0 20px;
+        }
+
+        > a:after {
+          content: "";
+          display: inline-block;
+          width: 4px;
+          height: 6px;
+          background: url('https://fxcity.co.kr/img/location_arr.png') no-repeat 0 0;
+          background-size: 4px 12px;
+          vertical-align: middle;
+          margin: 0 0 4px 20px;
+        }
+      }
+
+      > li.on > a {
+        color: #5d56a3;
+      }
+
+      > li + li > a {
+        border-left: 1px solid #cbcbcb;
+      }
+
+      > li:last-child > a {
+        border-right: 1px solid #cbcbcb;
+      }
+    }
+  }
+
+}

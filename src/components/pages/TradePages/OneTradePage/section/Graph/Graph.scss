@@ -1,0 +1,172 @@
+.btn.progress {
+  background: #ffb005;
+  color: #fff;
+  padding: 4px 0;
+  border-radius: 30px;
+  min-width: 59px;
+}
+
+.btn.buy {
+  background: #ff6c60;
+  color: #fff;
+  padding: 4px 0;
+  border-radius: 30px;
+  min-width: 59px;
+}
+
+.btn.sell {
+  background: #4c84ff;
+  color: #fff;
+  padding: 4px 0;
+  border-radius: 30px;
+  min-width: 59px;
+}
+
+.graph {
+  width: 940px;
+  border: 1px solid #d2d2d2;
+  height: 400px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 3px #c9ccd1;
+  display: inline-block;
+  overflow: hidden;
+
+  .chart_row {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .chart_col {
+      flex: 1;
+
+      .current_txt {
+        background: #290433;
+        color: #fff;
+        padding: 5px 10px;
+        margin: 0 10px;
+        font-size: 12px;
+        margin-top: 15px;
+      }
+
+      .chart_ctr {
+        text-align: right;
+        height: 60px;
+
+        .chartbtn {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          background: url(../../../../../../img/chart_ctrico.png) no-repeat 0 0;
+          background-size: auto 40px;
+          margin: 25px 0 0;
+        }
+
+        .currenttime {
+          position: relative;
+          bottom: 5px;
+          right: 20px;
+
+          .tit {
+            margin-right: 10px;
+          }
+        }
+
+        .ctrset {
+          display: inline-block;
+
+          .chartbtn.plus {
+            margin-right: 7px;
+          }
+
+          .chartbtn.ms {
+            background-position: -40px 0;
+          }
+        }
+      }
+
+      .chart_inner {
+        height: 340px;
+      }
+    }
+
+    .chart_col.currentview {
+      flex: none;
+    }
+  }
+}
+
+.graph_infoset {
+  width: 316px;
+  height: 400px;
+  margin: 0 0 0 20px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 3px #c9ccd1;
+  overflow: hidden;
+  display: inline-block;
+
+  .titset {
+    background: #02abd2;
+    height: 40px;
+    position: relative;
+
+    .hd3 {
+      font-size: 1em;
+      line-height: 40px;
+      padding-left: 10px;
+      color: #fff;
+      font-weight: 400;
+    }
+  }
+
+  .innercont {
+    border: 1px solid #d2d2d2;
+    height: calc(100% - 40px);
+    border-left-bottom-radius: 3px;
+    border-right-bottom-radius: 3px;
+
+    .ovscroll {
+      height: 287px;
+      overflow: auto;
+      border-width: 0 1px;
+
+      .tb_frm {
+        border-top: none;
+
+        > table {
+          background: 0 0;
+          width: 100%;
+          border-collapse: collapse;
+          border-right: 1px hidden #fff;
+
+          td {
+            font-size: .875em;
+            padding: 10px;
+            text-align: center;
+            border-width: 0 0 1px;
+          }
+        }
+      }
+    }
+
+    .btnset {
+      margin-top: 20px;
+    }
+
+    .btnset.ct {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 1279px) {
+  .graph {
+    width: 100% !important;
+  }
+
+  .graph_infoset {
+    width: 100%;
+    margin: 20px 0 0;
+  }
+}

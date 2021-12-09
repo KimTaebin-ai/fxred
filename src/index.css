@@ -1,0 +1,169 @@
+* {margin: 0; padding: 0; box-sizing: border-box; outline: none;}
+
+body {
+    font-size: 100%;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: noto,맑은 고딕,돋움,tahoma,sans-serif;
+    min-height: 100%;
+
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    color: #1b1b1b;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset, img, table, button {
+    border: 0;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+a {
+    color: #111;
+    text-decoration: none;
+}
+
+address, em {
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: 400;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+table th {
+    font-weight: 300;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 3px;
+    margin: 0;
+    padding: 0;
+}
+
+.gnb {
+    border: 1px solid #aaa;
+    display: inline-block;
+    height: 28px;
+    border-radius: 30px;
+    font-size: 0;
+    padding: 0 12px;
+    margin: auto;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+address, em {
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+}
+
+input, textarea, select {
+    outline: 0;
+    outline: none;
+    border: 0;
+    border: none;
+    vertical-align: middle;
+    font-size: 1em;
+    color: #000;
+    font-family: noto,맑은 고딕,돋움,tahoma,sans-serif;
+}
+
+.inputset {
+    display: inline-block;
+    border: 1px solid #9d9d9d;
+    background: #fff;
+    transition: border-color .6s ease;
+    -webkit-transition: border-color .6s ease;
+    -moz-transition: border-color .6s ease;
+}
+
+#content {
+    width: 1280px;
+    margin: 0 auto;
+    min-height: 500px;
+    padding: 20px 0 30px;
+}
+
+#wrap {
+    background: #eff2f7;
+    position: relative;
+}
+
+.input_col {
+    display: flex;
+    align-items: center;
+}
+
+.inputset>input, .inputset>select {
+    height: 38px;
+    padding: 0 5px;
+    font-size: 14px;
+}
+
+.agreebox {
+    background: #fff;
+    border: 1px solid #d2d2d2;
+    padding: 20px;
+}
+
+/*body {*/
+/*  margin: 0;*/
+/*  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',*/
+/*    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',*/
+/*    sans-serif;*/
+/*  -webkit-font-smoothing: antialiased;*/
+/*  -moz-osx-font-smoothing: grayscale;*/
+/*}*/
+
+/*code {*/
+/*  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',*/
+/*    monospace;*/
+/*}*/

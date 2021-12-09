@@ -1,0 +1,109 @@
+.noticepop {
+  position: fixed;
+  width: 500px;
+  height: 652px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  border: 1px solid #ccc;
+  background: #fff;
+  display: none;
+  z-index: 9999;
+
+  .noticepop_cont {
+    height: 600px;
+
+    .txtsection {
+      padding: 20px 30px;
+
+      .txtinfo {
+        height: 470px;
+        overflow: auto;
+      }
+
+      .hd2 + .txtinfo {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .noticepop_ctrset {
+    height: 50px;
+    background: #1b1b1b;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+
+    .lt {
+
+      .inputset.ckbox {
+        vertical-align: baseline;
+        border: none;
+        height: 20px;
+        background: 0 0;
+
+        input[type=checkbox] {
+          position: absolute;
+          left: -9999px;
+        }
+
+        label {
+          color: #fff;
+          display: inline-block;
+          height: 20px;
+        }
+
+        label:before {
+          border: none;
+          margin: 0 5px 3px 0;
+          content: "";
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          border-radius: 3px;
+          vertical-align: text-bottom;
+          background: #fff;
+        }
+      }
+
+      .inputset.ckbox.on {
+        label:before {
+          background: #1f4ea4 url(https://fxcity.co.kr/img/ckbox_arr.png) no-repeat center center;
+          border: 2px solid #1f4ea4;
+        }
+      }
+    }
+
+    .rt {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+
+      .btn.ctype1 {
+        padding: 0;
+        margin: 0;
+        background: 0 0;
+        color: #fff;
+      }
+
+      .btn.ctype1:before {
+        content: "";
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        background: url(../../../img/pop_closebtnico.png) no-repeat 0 0;
+        background-size: 100%;
+        margin: 0 5px 3px 0;
+        vertical-align: middle;
+      }
+    }
+
+    .btnset {
+      text-align: right;
+      margin: 7px 10px 0 0;
+    }
+  }
+}

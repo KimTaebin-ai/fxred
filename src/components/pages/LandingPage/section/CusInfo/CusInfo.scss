@@ -1,0 +1,192 @@
+.cusinfo {
+  width: 883px;
+  height: 173px;
+  margin: -86px auto 0;
+  background: #fff;
+  position: relative;
+  z-index: 10;
+  border-radius: 10px;
+  box-shadow: 0 7px 12px rgba(0,0,0,.24), 0 1px 2px rgba(0,0,0,.27);
+  overflow: hidden;
+
+  .box:first-child {
+    width: 45%;
+  }
+
+  .box:last-child {
+    width: 55%;
+  }
+
+  .box {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    display: table;
+
+    +.box:before {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 135px;
+      background: #c5c5c5;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    .infotxt {
+      padding: 0;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+
+      .titset {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        margin-top: 10px;
+        position: relative;
+
+        .hd3 {
+          font-size: 22px;
+          font-weight: 400;
+        }
+
+        .callnum {
+          font-size: 19px;
+          font-family: noto-bold;
+        }
+      }
+
+      .titset:before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 41px;
+        background: url(../../../../../img/main_callicon.png) no-repeat 0 0;
+        background-size: 100%;
+        margin: 0 auto 10px;
+      }
+
+      .innercont {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+
+        .ic {
+
+          >li {
+            font-size: 15px;
+            text-align: left;
+          }
+
+          >li:before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 1px;
+            background: #747474;
+            margin: 0 4px 4px 0;
+          }
+        }
+      }
+    }
+
+    .banner {
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      .simg {
+        display: block;
+        width: 440px;
+        height: 130px;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 1279px) {
+  .simg>img {
+    width: 100%;
+  }
+  .cusinfo {
+    width: calc(100% - 20px);
+    margin: 20px auto 0;
+    display: flex;
+    align-items: center;
+    height: auto;
+    box-shadow: none;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+
+    .box:first-child, .box:last-child {
+      width: inherit;
+    }
+
+    .box {
+      float: none;
+      width: 100%;
+      padding: 20px 0;
+
+      .infotxt {
+        padding: 0;
+        text-align: left;
+
+        .titset {
+          position: relative;
+          margin-left: 20px;
+          margin-bottom: 10px;
+          padding-left: 60px;
+        }
+
+        .titset:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          margin: auto;
+        }
+      }
+
+      .innercont {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 20px;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 768px) {
+  .cusinfo {
+    flex-direction: column;
+
+    .box+.box {
+      border-top: 1px solid #d2d2d2;
+    }
+
+    .box {
+
+      .banner .simg {
+        position: relative;
+        width: 100%;
+      }
+    }
+
+    +.m1 {
+      margin-top: 20px;
+    }
+  }
+}

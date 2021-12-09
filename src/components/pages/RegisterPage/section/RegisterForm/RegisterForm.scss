@@ -1,0 +1,296 @@
+.hd2 {
+  font-size: 1.7em;
+}
+
+.hd2.ct {
+  text-align: center;
+}
+
+.hd4 {
+  font-size: 1.2em;
+}
+
+.hd5 + form[name=fm], .hd4 + form[name=fm], .hd5 + .agreebox {
+  margin-top: 10px;
+}
+
+.frm_write {
+  border-top: 1px solid #4c84ff;
+  background: #fff;
+
+  .dlist {
+    display: table;
+    width: 100%;
+    height: 100%;
+
+    > dt {
+      width: 150px;
+      text-align: center;
+      background: #f8f8f8;
+      padding: 10px;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    > dd {
+      padding: 10px;
+      display: table-cell;
+      vertical-align: middle;
+
+      .input_col .inputset {
+        display: inline-block;
+        flex: none;
+      }
+
+      .wgrid1 {
+        width: 300px;
+      }
+
+      .inputset + .btn {
+        margin-left: 10px;
+      }
+
+      .btn.ctype2 {
+        background: #666;
+        color: #fff;
+        overflow: hidden;
+        padding: 8px 15px;
+      }
+
+      .txtinfo {
+        font-size: .75em;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .frm_list {
+
+    > li {
+      display: flex;
+      width: 100%;
+      border-bottom: 1px solid #d4d3d3;
+    }
+
+    > li .frm_clm {
+      display: inline-block;
+    }
+
+    > li .frm_clm.col2 {
+      width: calc(100% / 2);
+    }
+  }
+}
+
+.agreebox {
+
+  .stxt {
+    font-size: .875em;
+    color: #666;
+  }
+
+  .inputset + .stxt {
+    margin-top: 5px;
+  }
+
+  .inputset.ckbox {
+    border: none;
+    height: 20px;
+    vertical-align: middle;
+    background: 0 0;
+
+    > label {
+      display: inline-block;
+      height: 20px;
+
+      input[type=checkbox] {
+        position: absolute;
+        left: -9999px;
+      }
+    }
+
+    > label:before {
+      content: "";
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      border: 2px solid #6d6d6d;
+      border-radius: 3px;
+      vertical-align: text-bottom;
+      background: #fff;
+      margin-bottom: 2px;
+    }
+  }
+
+
+  .hd5 {
+    color: #666;
+    font-weight: 400;
+  }
+
+  .agree_content {
+    background: #f2f2f2;
+    height: 200px;
+    overflow: auto;
+    padding: 15px;
+  }
+}
+
+.agreebox + .agreebox {
+  margin-top: 40px;
+}
+
+.agreebox + .hd5, .tablist + .tab_sectionout {
+  margin-top: 50px;
+}
+
+form + .hd5 {
+  margin-top: 40px;
+}
+
+.hd5 + .agreebox {
+  margin-top: 10px;
+}
+
+
+.hd5 + .tb_frm {
+  margin-top: 20px;
+}
+
+.inputset + .hd5, {
+  margin-top: 20px;
+}
+
+.inputset.ckbox.on > label:before {
+  background: #1f4ea4 url(https://fxcity.co.kr/img/ckbox_arr.png) no-repeat center center;
+  border: 2px solid #1f4ea4;
+}
+
+.agreebox + .btnset {
+  margin-top: 20px;
+}
+
+.tb_frm {
+  border-top: 1px solid #4c84ff;
+
+  > table {
+    width: 100%;
+    border-collapse: collapse;
+    border-right: 1px hidden #fff;
+
+    th {
+      font-weight: 300;
+    }
+  }
+
+  > table > thead > tr > th, > table > tbody > tr > th, > table > tbody > tr > td {
+    border: 1px solid #d4d3d3;
+    border-width: 0 0 1px;
+    padding: 8px 10px;
+    text-align: center;
+  }
+
+  > table thead th, .tb_frm > table tbody th {
+    background: #f8f8f8;
+  }
+}
+
+.tb_frm.ct td {
+  text-align: center;
+}
+
+.tb_frm + .agreebox {
+  margin-top: 10px;
+}
+
+.btnset.ct {
+  text-align: center;
+}
+
+.btnset .btn + .btn {
+  margin-left: 15px;
+}
+
+.btn.cancel {
+  background: #666;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 40px;
+}
+
+@media (max-width: 768px) {
+  #content {
+    .frm_write {
+      .dlist {
+
+        > dd {
+
+          .input_col {
+
+            .inputset {
+              flex: 1;
+            }
+          }
+        }
+      }
+    }
+
+    .tb_frm {
+      > table {
+        th, td {
+          font-size: .875em;
+          padding: 10px 5px;
+        }
+      }
+    }
+
+    .agreebox label {
+      font-size: .875em;
+    }
+  }
+}
+
+@media (max-width: 1279px) {
+  #content {
+    width: inherit;
+    padding: 30px 10px;
+
+    .frm_write {
+
+      .frm_list > li {
+        flex-wrap: wrap;
+
+        .frm_clm.col2 {
+          width: 100%;
+
+          .dlist {
+            display: block;
+
+            > dt, > dd {
+              padding: 5px;
+              display: block;
+            }
+
+            > dt {
+              background: 0 0;
+              text-align: left;
+              font-size: .875em;
+            }
+
+            > dd {
+              input {
+                width: 100% !important;
+              }
+
+              select {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

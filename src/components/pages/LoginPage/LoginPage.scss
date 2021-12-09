@@ -1,0 +1,207 @@
+.btn.submit {
+  background: #0c2748;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 40px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  min-width: 1280px;
+
+  .loginbox {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+
+    .logo {
+      margin: 100px 0 0;
+    }
+
+    .logo + .txtinfo {
+      margin-top: 30px;
+    }
+
+    .txtinfo {
+      font-size: .875em;
+      color: #666;
+    }
+
+    .txtinfo + .inputfrm {
+      margin-top: 10px;
+    }
+
+    .inputfrm {
+
+      .inputset {
+        display: flex;
+        border: 1px solid #d4d3d3;
+
+        .ico {
+          position: relative;
+          display: inline-table;
+          width: 40px;
+          height: 40px;
+          border-right: 1px solid #d4d3d3;
+        }
+
+        .ico.id:before {
+          background-position: 0 0;
+        }
+
+        .ico:before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          margin: auto;
+          width: 18px;
+          height: 18px;
+          background: url('../../../img/login_iconset.png') no-repeat 0 0;
+          background-size: 36px auto;
+        }
+
+        input {
+          border-radius: 0;
+          height: 40px;
+          flex: 1;
+        }
+
+        .inputset > input, .inputset > select {
+          height: 38px;
+          padding: 0 5px;
+          font-size: 14px;
+        }
+      }
+
+      .inputset + .inputset {
+        margin-top: 20px;
+      }
+    }
+
+    .inputfrm + .btnset {
+      margin-top: 25px;
+    }
+
+    .btnset.col1 .btn {
+      display: block;
+    }
+
+    .btnset + .snsbtnset {
+      margin-top: 30px;
+    }
+
+    .snsbtnset {
+      position: relative;
+
+      .social + .social {
+        margin-top: 10px;
+      }
+
+      .social .btn {
+        position: relative;
+        display: block;
+        color: #fff;
+        padding: 0;
+        height: 50px;
+        line-height: 50px;
+
+        .snstxt {
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          border-right: 1px solid rgba(255, 255, 255, .2);
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .snstxt:before {
+          content: "";
+          display: block;
+          width: 50px;
+          height: 50px;
+          background: url(../../../img/snsloginset.png) no-repeat 0 0;
+          background-size: auto 50px;
+        }
+      }
+
+      .social.naver .btn {
+        background: #1dc800;
+
+        .snstxt:before {
+          background-position: 0 0;
+        }
+      }
+
+      .social.kakao .btn {
+        background: #f7e317;
+        color: #3c1e1e;
+
+        .snstxt:before {
+          background-position: -50px 0;
+        }
+      }
+
+      .social.google .btn {
+        background: #fff;
+        border: 1px solid #d4d3d3;
+        color: #1b1b1b;
+
+        .snstxt {
+          border-right: 1px solid #d4d3d3;
+        }
+
+        .snstxt:before {
+          background-position: -150px 0;
+        }
+      }
+    }
+
+    .snsbtnset + .findidset {
+      margin-top: 20px;
+    }
+
+    .findidset {
+      text-align: center;
+
+      .btn + .btn:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 1px;
+        height: 8px;
+        background: #d4d3d3;
+        margin: 0 20px;
+      }
+
+      .btn {
+        font-size: .8125em;
+        color: #666;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    min-width: inherit;
+
+    .loginbox {
+      width: 90vw;
+
+      .logo {
+        margin-top: 30px;
+      }
+    }
+  }
+
+}
